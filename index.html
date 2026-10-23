@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Consciencia Plena | Psicóloga Sonia Vargas</title>
+  
+  <link rel="icon" type="image/png" href="logo.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Modal Aviso de Privacidad y Derechos ARCO -->
+  <div id="privacyModal" class="modal-overlay" style="display: none;">
+    <div class="modal-glass-card">
+      <div class="modal-header">
+        <span class="modal-icon"></span>
+        <h3>Aviso de Privacidad y Derechos ARCO</h3>
+      </div>
+      <div class="modal-body">
+        <p>En <strong>Consciencia Plena</strong>, la confidencialidad y el resguardo de tus datos personales y sensibles son nuestra máxima prioridad, conforme a la legislación aplicable en materia de protección de datos personales.</p>
+        <p>Los datos que proporciones (incluyendo respuestas a cuestionarios y solicitudes de citas) son estrictamente confidenciales y utilizados únicamente con fines terapéuticos y de orientación.</p>
+        <div class="arco-badge-box">
+          <strong>Tus Derechos ARCO:</strong>
+          <ul>
+            <li><strong>A</strong>cceso: Conocer tus datos y el tratamiento que se les da.</li>
+            <li><strong>R</strong>ectificación: Solicitar la corrección de información desactualizada o inexacta.</li>
+            <li><strong>C</strong>ancelación: Pedir la eliminación de tus registros cuando lo consideres.</li>
+            <li><strong>O</strong>posición: Oponerte al tratamiento de tus datos para fines específicos.</li>
+          </ul>
+        </div>
+        <p class="modal-note">Puedes ejercer tus derechos ARCO en cualquier momento mediante comunicación directa con la psicóloga.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="btnAcceptPrivacy" class="btn btn-primary btn-block">He leído y acepto los términos</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navegación Superior -->
+  <header>
+    <nav class="navbar">
+      <a href="#inicio" class="brand-logo">
+        <img src="logo.jpg" alt="Logotipo Consciencia Plena" class="nav-logo-img">
+        <span>Consciencia Plena | Psicologia</span>
+      </a>
+      
+      <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-item">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-item">Psicóloga Sonia</a></li>
+        <li><a href="#servicios" class="nav-item">Servicios</a></li>
+        <li><a href="#noticias" class="nav-item">Salud Mental</a></li>
+        <li><a href="#evaluacion" class="nav-item">Test Emocional</a></li>
+        <li>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=concienciaplena.consultas@gmail.com&su=Solicitud%20de%20Cita%20-%20Consciencia%20Plena&body=Hola%20Psic.%20Sonia,%20me%20gustar%C3%ADa%20agendar%20una%20consulta." target="_blank" rel="noopener noreferrer" class="btn-cita">
+            ✉ Agendar Cita
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="container hero-container">
+      <span class="hero-badge">Atención Psicológica Profesional en Línea</span>
+      <h1>Un espacio seguro para entender lo que sientes y transformar tu bienestar</h1>
+      <p>Integrando herramientas prácticas del conductualismo y la calidez del humanismo para acompañarte a tu propio ritmo.</p>
+      
+      <div class="hero-actions">
+        <a href="#evaluacion" class="btn btn-primary">Realizar Test Inicial</a>
+        <a href="#sobre-mi" class="btn btn-secondary">Conocer a la Especialista</a>
+      </div>
+
+      <div class="hero-card-preview">
+        <div class="logo-preview-box">
+          <img src="logo.jpg" alt="Logotipo Sonia Vargas" class="hero-logo-img">
+        </div>
+        <h3>Psic. Sonia Vargas</h3>
+        <p class="role">Terapia Individual & Pareja • Duelo & Ansiedad[cite: 1]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Módulo 1: Perfil Profesional -->
+  <section id="sobre-mi" class="section section-about">
+    <div class="container">
+      <div class="section-title-wrap">
+        <h2>Perfil Profesional & Filosofía</h2>
+        <p>Acompañamiento cercano, adaptativo y libre de terapias rígidas</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon"></div>
+          <h3>Misión</h3>
+          <p>Acompañarte en tu proceso personal a través de terapia en línea, con un enfoque cercano, profesional y totalmente adaptado a ti. Integro herramientas del conductualismo y el humanismo para ayudarte a entender lo que te pasa, fortalecer tus áreas de oportunidad y desarrollar habilidades que te permitan sentirte más seguro(a) y en control de tu vida.</p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon"></div>
+          <h3>Visión</h3>
+          <p>Ser un espacio terapéutico en línea en el que las personas se sientan escuchadas, comprendidas y capaces de generar cambios reales en su vida. Busco que cada consultante descubra su propio potencial, fortalezca su confianza y construya una vida más plena y auténtica.</p>
+        </div>
+
+        <div class="about-card philosophy-card">
+          <div class="about-icon"></div>
+          <h3>Filosofía Terapéutica</h3>
+          <p class="quote">"Cada persona es única, por eso cada proceso también lo es."</p>
+          <p>Mi enfoque es flexible: combino técnicas prácticas para trabajar conductas con una mirada humana que valora tu historia, tus emociones y tu ritmo. Mi objetivo es acompañarte a:</p>
+          <ul class="checklist">
+            <li>Fortalecer tus debilidades y reconocer tus fortalezas.</li>
+            <li>Desarrollar seguridad en ti mismo(a) y ayudarte a creer en ti.</li>
+            <li>Alcanzar el cambio con las herramientas correctas.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Módulo 2: Servicios -->
+  <section id="servicios" class="section section-services">
+    <div class="container">
+      <div class="section-title-wrap">
+        <h2>Áreas de Atención Psicológica</h2>
+        <p>Espacios diseñados para abordar tus necesidades con empatía y rigor profesional</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"></div>
+          <h3>Terapia Individual</h3>
+          <p>Un espacio confidencial para explorar tus emociones, mejorar tu autoestima, superar bloqueos personales y potenciar tu crecimiento con herramientas prácticas.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"></div>
+          <h3>Terapia de Pareja</h3>
+          <p>Orientada a mejorar la comunicación, resolver dinámicas de conflicto, reconstruir la confianza o transitar acuerdos desde el respeto mutuo.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"></div>
+          <h3>Acompañamiento en Duelo</h3>
+          <p>Soporte compasivo y estructurado para transitar pérdidas significativas (rupturas, fallecimientos o cambios de vida trascendentales).</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"></div>
+          <h3>Ansiedad y Depresión</h3>
+          <p>Intervenciones cognitivo-conductuales para identificar patrones de pensamiento, reducir la sobrecarga mental y recuperar el bienestar cotidiano.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Módulo 3: Noticias -->
+  <section id="noticias" class="news-section">
+    <div class="section-title-wrap">
+      <h2 class="news-section-title">Noticias y Contenido Relevante</h2>
+      <p>Artículos y fuentes oficiales para la concientización y cuidado de la salud mental[cite: 1]</p>
+    </div>
+
+    <div class="news-card-container" id="newsCardContainer">
+      <div class="news-content" id="newsContent">
+        <div class="news-badge-container">
+          <span class="category-badge" id="newsCategory">Prevención</span>
+          <span class="source-badge" id="newsSource">Fuente</span>
+        </div>
+        
+        <h3 class="news-title">
+          <a href="#" id="newsLink" target="_blank" rel="noopener noreferrer">Título de la noticia</a>
+        </h3>
+        
+        <p class="news-summary" id="newsSummary">Resumen de la noticia...</p>
+
+        <div class="news-action-link">
+          <a href="#" id="newsBtnLink" target="_blank" rel="noopener noreferrer" class="read-more-btn">
+            Leer artículo completo ↗
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="slider-controls">
+          <button type="button" class="btn-nav" id="btnPrev" title="Anterior">&#10094;</button>
+          
+          <div class="indicators" id="indicatorsContainer"></div>
+
+          <button type="button" class="btn-nav" id="btnNext" title="Siguiente">&#10095;</button>
+        </div>
+
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Módulo 4: Test Emocional -->
+  <section id="evaluacion" class="section section-quiz">
+    <div class="container">
+      
+      <div class="quiz-intro-card" id="quizIntroCard">
+        <div class="quiz-intro-icon">✨</div>
+        <h2>¿Te gustaría realizar un pequeño test para conocerte?</h2>
+        <p>Tómate un par de minutos para reflexionar sobre tu bienestar en las últimas dos semanas a través de 15 breves preguntas. Es completamente anónimo y confidencial.</p>
+        <button type="button" id="btnStartQuiz" class="btn btn-primary">Comenzar Evaluación Inicial</button>
+      </div>
+
+      <div class="quiz-box" id="quizFormContainer" style="display: none;">
+        <div class="section-title-wrap">
+          <h2>Test de Autoevaluación Emocional</h2>
+          <p>Selecciona con total sinceridad la opción que mejor represente tu experiencia reciente.</p>
+        </div>
+
+        <form id="quizForm">
+          <div class="question-block">
+            <p class="question-title">1. ¿Con qué frecuencia te resulta difícil relajarte al terminar el día?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q1" value="0" required> Nunca</label>
+              <label><input type="radio" name="q1" value="1"> Raras veces</label>
+              <label><input type="radio" name="q1" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q1" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="question-title">2. ¿Has experimentado falta de interés o disfrute en actividades habituales?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q2" value="0" required> Nunca</label>
+              <label><input type="radio" name="q2" value="1"> Raras veces</label>
+              <label><input type="radio" name="q2" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q2" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="question-title">3. ¿Sientes que tus horarios de sueño o descanso se han alterado por preocupaciones?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q3" value="0" required> Nunca</label>
+              <label><input type="radio" name="q3" value="1"> Raras veces</label>
+              <label><input type="radio" name="q3" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q3" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="question-title">4. ¿Experimentas tensión muscular, fatiga constante o dolor de cabeza sin causa médica clara?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q4" value="0" required> Nunca</label>
+              <label><input type="radio" name="q4" value="1"> Raras veces</label>
+              <label><input type="radio" name="q4" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q4" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="question-title">5. ¿Te cuesta concentrarte en tus deberes escolares, laborales o cotidianos?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q5" value="0" required> Nunca</label>
+              <label><input type="radio" name="q5" value="1"> Raras veces</label>
+              <label><input type="radio" name="q5" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q5" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="question-title">6. ¿Sientes incertidumbre, temor o agobio respecto al porvenir?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q6" value="0" required> Nunca</label>
+              <label><input type="radio" name="q6" value="1"> Raras veces</label>
+              <label><input type="radio" name="q6" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q6" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="question-title">7. ¿Tiendes a aislarte de tus amigos, familia o círculo cercano?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q7" value="0" required> Nunca</label>
+              <label><input type="radio" name="q7" value="1"> Raras veces</label>
+              <label><input type="radio" name="q7" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q7" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="question-title">8. ¿Has sentido irritabilidad, impaciencia o enojo con mayor facilidad?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q8" value="0" required> Nunca</label>
+              <label><input type="radio" name="q8" value="1"> Raras veces</label>
+              <label><input type="radio" name="q8" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q8" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="question-title">9. ¿Sientes que tus responsabilidades rebasan tu capacidad para gestionarlas?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q9" value="0" required> Nunca</label>
+              <label><input type="radio" name="q9" value="1"> Raras veces</label>
+              <label><input type="radio" name="q9" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q9" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="question-title">10. ¿Tienes pensamientos de reproche continuo hacia ti mismo(a)?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q10" value="0" required> Nunca</label>
+              <label><input type="radio" name="q10" value="1"> Raras veces</label>
+              <label><input type="radio" name="q10" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q10" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="question-title">11. ¿Has experimentado cambios abruptos en tus hábitos de apetito?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q11" value="0" required> Nunca</label>
+              <label><input type="radio" name="q11" value="1"> Raras veces</label>
+              <label><input type="radio" name="q11" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q11" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="question-title">12. ¿Sientes que te cuesta tomar decisiones, incluso las más sencillas?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q12" value="0" required> Nunca</label>
+              <label><input type="radio" name="q12" value="1"> Raras veces</label>
+              <label><input type="radio" name="q12" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q12" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="question-title">13. ¿Te sientes desmotivado(a) o con sensación de vacío emocional?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q13" value="0" required> Nunca</label>
+              <label><input type="radio" name="q13" value="1"> Raras veces</label>
+              <label><input type="radio" name="q13" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q13" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="question-title">14. ¿Te resulta complicado expresar lo que sientes a quienes te rodean?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q14" value="0" required> Nunca</label>
+              <label><input type="radio" name="q14" value="1"> Raras veces</label>
+              <label><input type="radio" name="q14" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q14" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="question-title">15. ¿Consideras que contar con un espacio terapéutico profesional te brindaría claridad?</p>
+            <div class="options-group">
+              <label><input type="radio" name="q15" value="0" required> Nunca</label>
+              <label><input type="radio" name="q15" value="1"> Raras veces</label>
+              <label><input type="radio" name="q15" value="2"> Con frecuencia</label>
+              <label><input type="radio" name="q15" value="3"> Casi siempre</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Calcular Resultado Inicial</button>
+        </form>
+
+        <div id="quizResult" class="result-container" style="display: none;">
+          <div class="result-badge" id="resultLevelBadge">Nivel</div>
+          <h3 id="resultTitle">Resultado</h3>
+          <p id="resultFeedback">Retroalimentación...</p>
+          <div class="result-actions">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=concienciaplena.consultas@gmail.com&su=Solicitud%20de%20Cita%20-%20Consciencia%20Plena&body=Hola%20Psic.%20Sonia,%20me%20gustar%C3%ADa%20agendar%20una%20consulta." target="_blank" class="btn btn-primary">Agendar Consulta con Sonia</a>
+            <button type="button" id="btnResetQuiz" class="btn btn-secondary">Repetir Evaluación</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Consciencia Plena Psicología - Psic. Sonia Vargas</p>
+      <p class="privacy-link-container">
+        <a href="#" id="openPrivacyLink">Aviso de Privacidad (Derechos ARCO)</a>
+      </p>
+      <p class="softtec-brand">Desarrollado por <strong>SoftTec</strong> • Soluciones de Software y Tecnología[cite: 1]</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 
+
